@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 300px 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 3fr;
+  grid-template-areas:
+    "sidebar header header header"
+    "sidebar main main main";
+  height: 100vh;
+}
+
+/*----HEADER----*/
+
+.header {
+  grid-area: header;
+  height: 70px;
+  background-color: #f0eeee;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 30px;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.4);
+}
+
+.info-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-box i {
+  font-size: 30px;
+}
+
+.user-text {
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+.btn-dropdown {
+  margin-left: 10px;
+  padding: 0 10px;
+  border: 1px solid #a5ccd1;
+  border-radius: 5px;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  transition: color 100ms, background-color 100ms;
+}
+
+.btn-dropdown:hover {
+  color: white;
+  background-color: rgb(14, 63, 14);
+}
+
+.dropdown-menu {
+  margin-top: 100px;
+}
+
+/*----SIDEBAR----*/
+
+#sjb-sidebar {
+  grid-area: sidebar;
+  height: 100%;
+  background-color: #0c421c;
+  overflow-y: auto;
+  color: white;
+  font-weight: bold;
+}
+
+#sjb-sidebar img {
+  height: 130px;
+  padding-bottom: 10px;
+}
+
+.sidebar-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+  margin-bottom: 30px;
+}
+
+.sidebar-brand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-list {
+  padding: 0;
+  margin-top: 15px;
+  list-style-type: none;
+}
+
+.sidebar-list-item {
+  padding: 20px;
+  transition: background-color 100ms;
+}
+
+.sidebar-list-item i {
+  margin-right: 10px;
+}
+
+.sidebar-list-item:hover {
+  background-color: #e6e8ed;
+  color: #0c421c;
+  cursor: pointer;
+}
+
+.sidebar-list-item.active {
+  background-color: #e6e8ed;
+  color: #0c421c;
+}
+
+/*----END OF SIDEBAR----*/
