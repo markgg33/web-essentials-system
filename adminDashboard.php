@@ -55,14 +55,14 @@
                 <li class="sidebar-list-item active" data-page="dashboard" onclick="changePage('dashboard')">
                     <i class="fa-solid fa-chart-line"></i>DASHBOARD
                 </li>
-                <li class="sidebar-list-item" data-page="students" onclick="changePage('students')">
+                <li class="sidebar-list-item" data-page="students" onclick="changePage('link-launchers')">
                     <i class="fa-solid fa-link"></i> LINK LAUNCHERS
                 </li>
                 <li class="sidebar-list-item" onclick="changePage('add-users')">
                     <i class="fa-regular fa-id-card"></i> ADD USERS
                 </li>
                 <li class="sidebar-list-item" onclick="changePage('upload-session')">
-                    <i class="fa-regular fa-id-card"></i> UPLOAD SESSION
+                    <i class="fa-solid fa-upload"></i> UPLOAD SESSION
                 </li>
                 <li class="sidebar-list-item" onclick="changePage('announcement')">
                     <i class="fa-regular fa-id-card"></i> ADD ANNOUNCEMENTS
@@ -94,7 +94,7 @@
                     <div class="card">
                         <div class="card-inner">
                             <i class="fa-solid fa-folder"></i>
-                            <p>GSDs ACTIVE</p> 
+                            <p>GSDs ACTIVE</p>
                         </div>
                         <h2>10</h2> <!--CHANGE VALUE ACCORDING TO CODE THAT IDENTIFIES USERS ONLINE-->
                     </div>
@@ -145,11 +145,46 @@
 
             <!-- End of Dashboard Page -->
 
-            <!-- Students Page -->
+            <!---Link Launchers Page--->
+
+            <div id="link-launchers-page" class="page-content">
+                <div class="main-title">
+                    <h1>LINK LAUNCHERS</h1>
+                </div>
+
+                <div class="main-buttons">
+    
+                    <div class="card">
+                        <div class="card-inner">
+                            <i class="fa-solid fa-user"></i>
+                            <p>USERS ONLINE</p>
+                        </div>
+                        <h2>150</h2> <!--CHANGE VALUE ACCORDING TO CODE THAT IDENTIFIES USERS ONLINE-->
+                    </div>
+
+                    <div class="card">
+                        <div class="card-inner">
+                            <i class="fa-solid fa-folder"></i>
+                            <p>GSDs ACTIVE</p>
+                        </div>
+                        <h2>10</h2> <!--CHANGE VALUE ACCORDING TO CODE THAT IDENTIFIES USERS ONLINE-->
+                    </div>
+
+                    <div class="card">
+                        <div class="card-inner">
+                            <i class="fa-solid fa-keyboard"></i>
+                            <p>USERS REGISTERED</p>
+                        </div>
+                        <h2>20</h2> <!--CHANGE VALUE ACCORDING TO CODE THAT IDENTIFIES USERS ONLINE-->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add Users Page -->
             <div id="add-users-page" class="page-content">
 
                 <div class="main-title">
-                    <h1>STUDENTS</h1>
+                    <h1>ADD USERS</h1>
                 </div>
 
                 <div class="container-fluid table-container">
