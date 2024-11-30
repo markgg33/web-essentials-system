@@ -184,48 +184,30 @@
             <div id="add-users-page" class="page-content">
 
                 <div class="main-title">
-                    <h1>ADD USERS</h1>
+                    <h1>STUDENTS</h1>
                 </div>
 
-                <div class="container-fluid table-container">
-                    <table class="table student-table">
-                        <thead>
-                            <tr>
-                                <th scope="col">RFID</th>
-                                <th scope="col">Student ID</th>
-                                <th scope="col">First Name</th>
-                                <th scope="col">Middle Name</th>
-                                <th scope="col">Last Name</th>
-                                <th scope="col">Course</th>
-                                <th scope="col">Year Level</th>
-                                <th scope="col">Semester</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">EA23UIO</th>
-                                <td>2022-00130</td>
-                                <td>Mark Francis</td>
-                                <td>Perez</td>
-                                <td>De Guzman</td>
-                                <td>Information Technology</td>
-                                <td>2nd Year</td>
-                                <td>3rd Semester</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="container-md">
+                    <form>
+                        <div class="image-box">
+                            <img src="images/resono-logo.png" alt="Resono Logo" />
+                            <br>
+                            <strong>Web Team Essentials System</strong>
+                        </div>
+                        <div class="mb-3">
+                            <label for="userEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp" />
+                            <div id="emailHelp" class="form-text">
+                                We'll never share your email with anyone else.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="userPass" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="userPass" required />
+                        </div>
+                        <button type="submit" class="btn-submit"><strong>Submit</strong></button>
+                    </form>
                 </div>
-
-                <!--REVISE PAGINATION IF NEEDED FOR THE TABLE -MARK -->
-                <nav class="nav-pagination">
-                    <ul class="pagination gap-2">
-                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                    </ul>
-                </nav>
             </div>
 
         </main>
