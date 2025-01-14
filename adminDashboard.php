@@ -1,3 +1,10 @@
+<?php
+
+include "registration.php";
+include "functions.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,8 +50,9 @@
         <aside id="sjb-sidebar">
             <div class="sidebar-title">
                 <div class="sidebar-brand">
-                    <img src="images/resono-logo.png" alt="Resono Logo">
-                    <p>WEB ADMIN DASHBOARD</p>
+                    <img src="images/cdpLogo.png" alt="Logo">
+                    <br>
+                    <strong>WEB ADMIN DASHBOARD</strong>
                 </div>
 
             </div>
@@ -104,8 +112,9 @@
                             <i class="fa-solid fa-keyboard"></i>
                             <p>USERS REGISTERED</p>
                         </div>
-                        <h2>20</h2> <!--CHANGE VALUE ACCORDING TO CODE THAT IDENTIFIES USERS ONLINE-->
+                        <h2><?php echo getUserCount('web_users'); ?></h2> <!--CHANGE VALUE ACCORDING TO CODE THAT IDENTIFIES USERS ONLINE-->
                     </div>
+
 
 
                 </div>
@@ -152,67 +161,170 @@
                     <h1>LINK LAUNCHERS</h1>
                 </div>
 
-                <div class="main-buttons">
-    
-                    <div class="card">
-                        <div class="card-inner">
-                            <i class="fa-solid fa-user"></i>
-                            <p>USERS ONLINE</p>
-                        </div>
-                        <h2>150</h2> <!--CHANGE VALUE ACCORDING TO CODE THAT IDENTIFIES USERS ONLINE-->
-                    </div>
+                <div class="container-fluid link-container">
+                    <div class="main-buttons">
 
-                    <div class="card">
-                        <div class="card-inner">
-                            <i class="fa-solid fa-folder"></i>
-                            <p>GSDs ACTIVE</p>
-                        </div>
-                        <h2>10</h2> <!--CHANGE VALUE ACCORDING TO CODE THAT IDENTIFIES USERS ONLINE-->
-                    </div>
+                        <a href="https://jet-p-001.sitecorecontenthub.cloud/en-us/Account?ReturnUrl=%2Fen-us" class="btn-cards" target="_blank">
+                            <div class="btn-cards-inner">
+                                <img src="images/jetstarLogo.png" alt="Logo">
+                                <br>
+                                <p>JETSTAR ACCOUNT SIGN-IN</p>
+                            </div>
+                        </a>
+                        <a href="https://jetstarairways-my.sharepoint.com/:x:/r/personal/justin_black_jetstar_com/_layouts/15/doc2.aspx?sourcedoc=%7BD31F2C8A-2F46-46B0-B7DF-C0A522AB3BD6%7D&file=Content%20Hub%20Help%20Migration%20CIM%20-%20Monstars.xlsx&fromShare=true&action=default&mobileredirect=true&wdOrigin=TEAMS-MAGLEV.p2p_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1721275896240&web=1
+" class="btn-cards" target="_blank">
+                            <div class="btn-cards-inner">
+                                <img src="images/cdpLogo.png" alt="Logo">
+                                <br>
+                                <p>CH MIGRATION HELP SHARED FILE</p>
+                            </div>
+                        </a>
 
-                    <div class="card">
-                        <div class="card-inner">
-                            <i class="fa-solid fa-keyboard"></i>
-                            <p>USERS REGISTERED</p>
-                        </div>
-                        <h2>20</h2> <!--CHANGE VALUE ACCORDING TO CODE THAT IDENTIFIES USERS ONLINE-->
+                        <a href="https://jet-p-001.sitecorecontenthub.cloud/en-us/Account?ReturnUrl=%2Fen-us" class="btn-cards" target="_blank">
+                            <div class="btn-cards-inner">
+                                <img src="images/cdpLogo.png" alt="Logo">
+                                <br>
+                                <p>JETSTAR ACCOUNT SIGN-IN</p>
+                            </div>
+                        </a>
+
                     </div>
                 </div>
             </div>
 
             <!-- Add Users Page -->
+
             <div id="add-users-page" class="page-content">
 
                 <div class="main-title">
-                    <h1>STUDENTS</h1>
+                    <h1>REGISTER USERS</h1>
                 </div>
 
-                <div class="container-md">
-                    <form>
-                        <div class="image-box">
-                            <img src="images/resono-logo.png" alt="Resono Logo" />
-                            <br>
-                            <strong>Web Team Essentials System</strong>
-                        </div>
-                        <div class="mb-3">
-                            <label for="userEmail" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp" />
-                            <div id="emailHelp" class="form-text">
-                                We'll never share your email with anyone else.
+                <div class="add-page-container">
+                    <div class="container-lg form-container ">
+                        <form action="#" class="form-login" method="POST" enctype="multipart/form-data">
+                            <div class="row gx-3">
+                                <div class="col">
+                                    <label for="FirstName">First Name:</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="first_name" placeholder="E.g: Juan" autofocus required>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <label for="MiddleName">Middle Name:</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="middle_name" placeholder="E.g: Dela Cruz" autofocus required>
+                                    </div>
+                                </div>
+                                <div class="mb-3"></div>
                             </div>
+
+                            <div class="row gx-3">
+                                <div class="col">
+                                    <label for="Surname">Surname:</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="surname" placeholder="E.g: Dela Cruz" autofocus required>
+                                    </div>
+                                </div>
+                                <div class="mb-3"></div>
+                            </div>
+
+                            <div class="row gx-3">
+                                <div class="col">
+                                    <label for="Username">Username:</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="username" placeholder="E.g: WEB-2024-01" autofocus required>
+                                        <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <label for="Email">Email:</label>
+                                    <div class="input-group">
+                                        <input type="email" class="form-control" name="email" placeholder="Enter Email" required>
+                                        <span class="input-group-text">@gmail.com</i></span>
+                                    </div>
+                                </div>
+                                <div class="mb-3"></div>
+                            </div>
+
+                            <div class="row gx-3">
+                                <div class="col">
+                                    <label for="Gender">Gender:</label>
+                                    <select class="form-select" aria-label="Default select example" name="gender">
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                        <option value="preferNTS">Prefer not to say</option>
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <label for="Password">Password:</label>
+                                    <div class="input-group">
+                                        <input type="password" name="password" class="form-control" placeholder="Enter Password" autofocus required>
+                                        <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <label for="ConfirmPassword">Confirm Password:</label>
+                                    <div class="input-group">
+                                        <input type="password" name="confirm_password" class="form-control" placeholder="Confirm Password" autofocus required>
+                                        <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+                                    </div>
+                                </div>
+                                <div class="mb-3"></div>
+                            </div>
+
+                            <div class="row gx-3">
+                                <div class="col">
+                                    <label for="DateOfBirth">Date of Birth:</label>
+                                    <input type="date" name="dob" class="form-control" autofocus required>
+                                </div>
+                                <div class="col">
+                                    <label for="Photo">Photo Upload:</label>
+                                    <div class="input-group">
+                                        <input type="file" name="photo" class="form-control" accept="image/*">
+                                        <span class="input-group-text"><i class="fa-solid fa-camera"></i></span>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <label for="AccountType">Account Type:</label>
+                                    <select name="usertype" class="form-select">
+                                        <option value="user">User</option>
+                                        <option value="admin" disabled>Admin</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3"></div>
+                            </div>
+
+                            <div class="btn-form-container">
+                                <button type="submit" name="submit" class="btn-register">REGISTER</button>
+                            </div>
+                    </div>
+                    <div class="container-lg list-user-container ">
+                        <div class="user-box">
+                        <tbody id="studentTableBody">
+                            <?php
+                            $userData = getuserData();
+                            foreach ($userData as $web_user) {
+                                echo "<tr>";
+                                echo "<td>{$web_user['first_name']}</td>";
+                                echo "<td>{$web_user['middle_name']}</td>";
+                                echo "<td>{$web_user['surname']}</td>";
+                                echo "<td>{$web_user['username']}</td>";
+                                echo "<td>{$web_user['gender']}</td>";
+                                echo "<td>{$web_user['dob']}</td>";
+                                echo "<td>{$web_user['usertype']}</td>";
+                                echo "</tr>";
+                            }
+                            ?>
                         </div>
-                        <div class="mb-3">
-                            <label for="userPass" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="userPass" required />
-                        </div>
-                        <button type="submit" class="btn-submit"><strong>Submit</strong></button>
-                    </form>
+                    </div>
                 </div>
             </div>
-
-        </main>
-
     </div>
+
+    </main>
+
 
 
     <script src="sidebar.js"></script>

@@ -68,14 +68,13 @@
 #sjb-sidebar {
   grid-area: sidebar;
   height: 100%;
-  background-color: #0c421c;
+  background-color: #0c156d;
   overflow-y: auto;
   color: white;
-  font-weight: bold;
 }
 
 #sjb-sidebar img {
-  height: 130px;
+  height: 100px;
   padding-bottom: 10px;
 }
 
@@ -101,7 +100,7 @@
 }
 
 .sidebar-list-item {
-  padding: 15px 20px;
+  padding: 20px 20px;
   transition: background-color 100ms;
 }
 
@@ -111,13 +110,15 @@
 
 .sidebar-list-item:hover {
   background-color: #e6e8ed;
-  color: #0c421c;
+  color: #0c156d;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .sidebar-list-item.active {
   background-color: #e6e8ed;
-  color: #0c421c;
+  color: #0c156d;
+  font-weight: bold;
 }
 
 /*----END OF SIDEBAR----*/
@@ -138,7 +139,7 @@
 
 .main-cards {
   display: grid;
-  grid-template-columns: 0.5fr 0.5fr; /*ADJUST ACCORDING TO THE NUMBER OF CARDS*/
+  grid-template-columns: 0.5fr 0.5fr 0.5fr; /*ADJUST ACCORDING TO THE NUMBER OF CARDS*/
   gap: 20px;
   margin: 20px 0;
 }
@@ -164,19 +165,19 @@
 }
 
 .card:nth-child(1) {
-  background-color: #054907;
+  background-color: #0c156d;
 }
 
 .card:nth-child(2) {
-  background-color: #0a800e;
+  background-color: #13208f;
 }
 
 .card:nth-child(3) {
-  background-color: #05a80a;
+  background-color: #192ac2;
 }
 
 .card:nth-child(4) {
-  background-color: #054907;
+  background-color: #1d31e0;
 }
 
 .card i {
@@ -231,7 +232,7 @@
   align-items: center;
   padding: 25px;
   margin-bottom: 16px;
-  background-color: #054907;
+  background-color: #0c156d;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
@@ -278,12 +279,12 @@
 }
 
 .calendar-days .day.today {
-  background-color: #054907;
+  background-color: #192ac2;
   color: white;
 }
 
 .calendar-days .day:hover {
-  background-color: #266b28;
+  background-color: #1d31e0;
   color: white;
   cursor: pointer;
 }
@@ -297,11 +298,86 @@
 
 /*----LINK LAUNCHERS----*/
 
+.btn-cards {
+  padding: 20px 0;
+  text-decoration: none;
+  background-color: #0c156d;
+  transition: background-color 300ms;
+  border: 0.5px solid black;
+  border-radius: 5px;
+  box-shadow: 5px 5px 1px black;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-cards:hover {
+  background-color: #3b4bdd;
+}
+
+.btn-cards-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 20px;
+}
+
+.btn-cards img {
+  height: 100px;
+}
+
 .main-buttons {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /*ADJUST ACCORDING TO THE NUMBER OF CARDS*/
+  grid-template-columns: 1fr 1fr 1fr; /*ADJUST ACCORDING TO THE NUMBER OF CARDS*/
   gap: 20px;
   margin: 20px 0;
 }
 
 /*----END OF LINK LAUNCHERS----*/
+
+/*----REGISTRATION OF USERS----*/
+
+.add-page-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-container {
+  border: 0.5px solid black;
+  border-radius: 5px;
+  box-shadow: 5px 5px 1px black;
+  padding: 50px 20px;
+  margin-top: 50px;
+}
+
+.btn-form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn-register {
+  width: 50%;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  background-color: #192ac2;
+  box-shadow: 5px 5px 1px black;
+  transition: background-color 200ms;
+}
+
+.btn-register:hover {
+  background-color: #1d31e0;
+}
+
+.center-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+/*----END OF REGISTRATION OF USERS----*/
