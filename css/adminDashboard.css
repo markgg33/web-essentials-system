@@ -381,3 +381,13 @@
   justify-content: center;
 }
 /*----END OF REGISTRATION OF USERS----*/
+
+/*----TABLE LIST----*/
+
+.list-table{
+  margin-top: 50px;
+  text-align: center;
+  border: 2px solid black;
+}
+
+/*----END OF TABLE LIST----*/

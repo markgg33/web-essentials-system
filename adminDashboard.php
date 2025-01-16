@@ -302,21 +302,33 @@ include "functions.php";
                     </div>
                     <div class="container-lg list-user-container ">
                         <div class="user-box">
-                        <tbody id="studentTableBody">
-                            <?php
-                            $userData = getuserData();
-                            foreach ($userData as $web_user) {
-                                echo "<tr>";
-                                echo "<td>{$web_user['first_name']}</td>";
-                                echo "<td>{$web_user['middle_name']}</td>";
-                                echo "<td>{$web_user['surname']}</td>";
-                                echo "<td>{$web_user['username']}</td>";
-                                echo "<td>{$web_user['gender']}</td>";
-                                echo "<td>{$web_user['dob']}</td>";
-                                echo "<td>{$web_user['usertype']}</td>";
-                                echo "</tr>";
-                            }
-                            ?>
+                            <table class="table table-bordered table-striped list-table">
+                                <thead>
+                                    <tr>
+                                        <th>Username</th>
+                                        <th>First Name</th>
+                                        <th>Middle Name</th>
+                                        <th>Surname</th>
+                                        <th>Gender</th>
+                                        <th>Date of Birth</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="studentTableBody">
+                                    <?php
+                                    $userData = getuserData();
+                                    foreach ($userData as $web_user) {
+                                        echo "<tr>";
+                                        echo "<td>{$web_user['username']}</td>";
+                                        echo "<td>{$web_user['first_name']}</td>";
+                                        echo "<td>{$web_user['middle_name']}</td>";
+                                        echo "<td>{$web_user['surname']}</td>";
+                                        echo "<td>{$web_user['gender']}</td>";
+                                        echo "<td>{$web_user['dob']}</td>";
+                                        echo "</tr>";
+                                    }
+                                    ?>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
