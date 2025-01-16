@@ -31,13 +31,13 @@
 }
 
 .image-box img {
-  height: 30vh;
+  height: 20vh;
 }
 
 form {
-  padding: 30px 60px;
+  padding: 30px 100px;
   border-radius: 5px;
-  background-color: rgb(2, 66, 2);
+  background-color: #0c156d;
   box-shadow: 10px 10px 1px black;
 }
 
@@ -46,18 +46,23 @@ form {
 }
 
 .btn-submit {
+  align-items: center;
+  width: 100%;
   margin-top: 10px;
   padding: 10px 20px;
   border-radius: 5px;
   border: none;
-  background-color: rgb(45, 192, 45);
+  background-color: #1a2bbe;
   color: white;
-  box-shadow: 5px 5px 1px black;
-  transition: background-color 100ms;
+  transition: background-color 100ms, transform 100ms;
 }
 
+
+
 .btn-submit:hover {
-  background-color: rgb(25, 104, 25);
+  background-color: #3a4eff;
+  transform: translate(-5px, -5px);
+  box-shadow: 5px 5px 1px black;
 }
 
 .credit-box {

@@ -25,7 +25,7 @@
       <div class="col form-container">
         <form>
           <div class="image-box">
-            <img src="images/resono-logo.png" alt="Resono Logo" />
+            <img src="images/cdpLogo.png" alt="IT Logo" />
             <br>
             <strong>Web Team Essentials System</strong>
           </div>
@@ -38,21 +38,25 @@
           </div>
           <div class="mb-3">
             <label for="userPass" class="form-label">Password</label>
-            <input type="password" class="form-control" id="userPass" required/>
+            <input type="password" class="form-control" id="userPass" required />
           </div>
-          <button type="submit" class="btn-submit"><strong>Submit</strong></button>
+          <div class="btn-center">
+            <button type="submit" class="btn-submit"><strong>Submit</strong></button>
+          </div>
+
         </form>
       </div>
-      <div class="col credit-box d-none d-lg-flex">
+      <!---div class="col credit-box d-none d-lg-flex">
         <div class="container-md">
           <p><strong>RESONO</strong> is about giving companies the power of knowing their business operations are in safe hands as they look toward the future. We want to work with you no matter what phase you are in – start-up, scale-up or enterprise, we have you covered.</p>
           <p>More than just another outsourcing company, we are a team of professionals with proven experience and results in the field.</p>
           <p>Our strategy and support solutions are never a one size fits all. Instead, each is a carefully analysed and tailored set of services ensuring your success.</p>
           <p>We are adaptable and do not expect our customers to conform to rigid practices. You need it? We got it for you!</p>
         </div>
-      </div>
+      </div---->
     </div>
   </div>
 </body>
+
 
 </html>

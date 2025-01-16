@@ -192,6 +192,8 @@ include "functions.php";
                 </div>
             </div>
 
+            <!-- End of Link of Launchers Page -->
+
             <!-- Add Users Page -->
 
             <div id="add-users-page" class="page-content">
@@ -300,6 +302,7 @@ include "functions.php";
                                 <button type="submit" name="submit" class="btn-register">REGISTER</button>
                             </div>
                     </div>
+
                     <div class="container-lg list-user-container ">
                         <div class="user-box">
                             <table class="table table-bordered table-striped list-table">
@@ -333,6 +336,36 @@ include "functions.php";
                     </div>
                 </div>
             </div>
+
+            <!-- End of Add Users Page -->
+
+            <!-- Upload session Page -->
+            
+            <div id="upload-session-page" class="page-content">
+                <div class="main-title">
+                    <h1>UPLOAD SESSIONS</h1>
+
+                </div>
+
+                <div class="container-lg upload-container">
+                    <form action="#" class="form-upload" method="POST" enctype="multipart/form-data">
+                        <div class="col">
+                            <div class="input-group">
+                                <span class="input-group-text">Title:</span>
+                                <input type="text" class="form-control" name="upload-title" placeholder="How to rename a content inside Content Hub" autofocus required>
+                            </div>
+                        </div>
+                        <div class="textarea-section">
+                            <label>Description:</label>
+                            <br>
+                            <textarea class="form-control textarea-form" placeholder="Input your description here"></textarea>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- End of Upload session Page -->
     </div>
 
     </main>
