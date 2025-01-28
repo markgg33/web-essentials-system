@@ -301,17 +301,18 @@
 .btn-cards {
   padding: 20px 0;
   text-decoration: none;
-  background-color: #0c156d;
+  background-color: transparent;
   transition: background-color 300ms;
   border: 0.5px solid black;
   border-radius: 5px;
   box-shadow: 5px 5px 1px black;
-  color: white;
+  color: black;
+  font-size: 25px;
   font-weight: bold;
 }
 
 .btn-cards:hover {
-  background-color: #3b4bdd;
+  background-color: #acacac;
 }
 
 .btn-cards-inner {
@@ -319,6 +320,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   margin: 20px 20px;
 }
 
@@ -328,8 +330,8 @@
 
 .main-buttons {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /*ADJUST ACCORDING TO THE NUMBER OF CARDS*/
-  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /*ADJUST ACCORDING TO THE NUMBER OF CARDS*/
+  gap: 50px;
   margin: 20px 0;
 }
 
@@ -337,7 +339,7 @@
 
 /*----REGISTRATION OF USERS----*/
 
-.add-page-container{
+.add-page-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
@@ -381,3 +383,47 @@
   justify-content: center;
 }
 /*----END OF REGISTRATION OF USERS----*/
+
+/*----TABLE LIST----*/
+
+.list-table {
+  margin-top: 50px;
+  text-align: center;
+  border: 2px solid black;
+}
+
+/*----END OF TABLE LIST----*/
+
+/*----FORM UPLOAD FORMAT----*/
+
+.form-upload {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.upload-container{
+  margin-top: 40px;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.textarea-section{
+  margin-top: 20px;
+}
+
+.textarea-section label{
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.textarea-form{
+  height: 300px;
+  resize: none;
+}
+
+/*----END OF FORM UPLOAD FORMAT----*/
+
+

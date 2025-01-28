@@ -32,7 +32,7 @@ function getuserData()
             $data[] = [
                 'first_name' => $row['first_name'],
                 'middle_name' => $row['middle_name'],
-                'last_name' => $row['surname'],
+                'surname' => $row['surname'],
                 'username' => $row['username'],
                 'dob' => $row['dob'],
                 'gender' => $row['gender'],
